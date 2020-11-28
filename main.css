@@ -1,21 +1,53 @@
 body {
 	font-family: 'Rock Salt', cursive;
-	color: blue;
+	color: black;
 	background-color: white;
 	font-size: 20px;
 }
 
-table, th, td {
-  border: 1px solid black;
-	
+h1 {
+  margin-bottom: 0px;
 }
 
-th, td {
+button {
+  font-family: inherit;
+  background-color: #def310;
+  margin-bottom: 28px;
+}
+
+th, 
+td {
   padding: 30px auto;
   text-align: center;
   width: 155px;
   height: 155px; 
-  background-color: #70cac9;
+  background-color: white;
   font-size: 60px;
   color: black;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+td {
+  border: 6px solid #222;
+}
+
+td:first-of-type {
+  border-left-color: transparent;
+  border-top-color: transparent;
+}
+
+td:nth-of-type(2) {
+  border-top-color: transparent;
+}
+
+td:nth-of-type(3) {
+  border-right-color: transparent;
+  border-top-color: transparent;
+}
+
+tr:nth-of-type(3) td {
+  border-bottom-color: transparent;
 }
